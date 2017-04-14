@@ -54,18 +54,20 @@ If you have Ruby already installed, to install Bundler, just do `sudo gem instal
 **Please build and view your site locally before submitting a PR!**
 
 cd into the directory where you cloned this repository, then install the
-required gems with `bundle install`. This will automatically put the gems into
-`./vendor/bundle`.
+required gems with 
+
+    bundle install --path vendor/bundle
+
+this will automatically put the gems into `./vendor/bundle`.
 
 Start the server in the context of the bundle:
 
     bundle exec jekyll serve
 
-The generated site is available at `http://localhost:4000`
+The generated site is available at `http://127.0.0.1:4000/chapter/`
 
-Note, this will bring you to the index page. If you'd like to see your chapter,
-make sure to navigate there explicitly, e.g.,
-`http://localhost:4000/chapter/1/rpc.html`.
+If you'd like to see your chapter, make sure to navigate there
+explicitly, e.g., `http://localhost:4000/chapter/1/rpc.html`.
 
 ## Adding/editing pages
 
